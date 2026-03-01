@@ -60,7 +60,7 @@ A Neo4j AuraDB instance (or local Neo4j Desktop)
 
 1. Clone the Repository
 Bash
-git clone https://github.com/Adarsh-engu/GraphGST.git
+git clone https://github.com/sanjucoder-96/Hack_Me
 cd GraphGST
 2. Backend Setup
 Bash
