@@ -9,7 +9,9 @@ Flat SQL databases fail at GST reconciliation because circular trading is a mult
 💡 Our Solution Approach
 GraphGST transforms flat tax data into a Neo4j Knowledge Graph. We deploy multi-hop Cypher algorithms to validate end-to-end ITC compliance and uncover circular fraud. An Isolation Forest model predicts vendor risk, while our GraphRAG Copilot translates complex network mathematics into explainable, legally sound audit narratives.
 
-🚀 Key Features & Deliverables Achieved
+🚀 Key Features & Deliverables Achieved:
+
+
 ✅ 1. GST Knowledge Graph Schema: Meticulously modeled entities (GSTIN, Invoice, IRN, e-Way Bill, GSTR-1, GSTR-3B, TaxPayment) connected via factual supply-chain edges. Includes a robust mock-data seeder simulating 9 complex fraud and compliance scenarios.
 
 ✅ 2. Multi-Hop Reconciliation Engine: Uses native Cypher traversal (MATCH (s)-[:ISSUED_INVOICE]->(i)-[:DECLARED_IN]->(:GSTR1)) to mathematically validate the ITC chain and classify mismatches (e.g., MISSING_GSTR3B, AMOUNT_MISMATCH).
@@ -34,6 +36,8 @@ AI & Machine Learning: Scikit-Learn (Isolation Forest), NetworkX, PyTorch (R&D)
 Domain: Indian FinTech, GST Law (Section 16, Section 74)
 
 🏗️ System Architecture
+
+
 Client Layer: React Dashboard visualizing graph physics via Cytoscape.js.
 
 API Layer: FastAPI routing REST endpoints (/api/graph/full, /api/fraud, /api/agent/query).
